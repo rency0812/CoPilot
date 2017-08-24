@@ -14,7 +14,7 @@
             <p class="white">{{ displayName }}</p>
           </div>
           <a href="javascript:;">
-            <i class="fa fa-circle text-success"></i> Online
+            <i class="fa fa-circle text-success"></i> 在线
           </a>
         </div>
       </div>
@@ -26,8 +26,8 @@
             name="search"
             id="search"
             class="search form-control"
-            data-toggle="hideseek" p
-            laceholder="Search Menus"
+            data-toggle="hideseek" 
+            placeholder="请输入想要搜索的菜单"
             data-list=".sidebar-menu">
           <span class="input-group-btn">
             <button type="submit" name="search" id="search-btn" class="btn btn-flat">

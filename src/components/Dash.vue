@@ -20,7 +20,7 @@
                 <span class="label label-success">{{ userInfo.messages | count }}</span>
               </a>
               <ul class="dropdown-menu">
-                <li class="header">You have {{ userInfo.messages | count }} message(s)</li>
+                <li class="header">你有 {{ userInfo.messages | count }} 信息</li>
                 <li v-if="userInfo.messages.length > 0">
                   <!-- inner menu: contains the messages -->
                   <ul class="menu">
@@ -29,12 +29,12 @@
                       <a href="javascript:;">
                         <!-- Message title and timestamp -->
                         <h4>
-                          Support Team
+                          测试
                           <small>
-                            <i class="fa fa-clock-o"></i> 5 mins</small>
+                            <i class="fa fa-clock-o"></i> 5 分钟</small>
                         </h4>
                         <!-- The message -->
-                        <p>Why not consider this a test message?</p>
+                        <p>测试信息</p>
                       </a>
                     </li>
                     <!-- end message -->
@@ -42,7 +42,7 @@
                   <!-- /.menu -->
                 </li>
                 <li class="footer" v-if="userInfo.messages.length > 0">
-                  <a href="javascript:;">See All Messages</a>
+                  <a href="javascript:;">查看所有信息</a>
                 </li>
               </ul>
             </li>
@@ -55,21 +55,21 @@
                 <span class="label label-warning">{{ userInfo.notifications | count }}</span>
               </a>
               <ul class="dropdown-menu">
-                <li class="header">You have {{ userInfo.notifications | count }} notification(s)</li>
+                <li class="header">你有 {{ userInfo.notifications | count }} 通知</li>
                 <li v-if="userInfo.notifications.length > 0">
                   <!-- Inner Menu: contains the notifications -->
                   <ul class="menu">
                     <li>
                       <!-- start notification -->
                       <a href="javascript:;">
-                        <i class="fa fa-users text-aqua"></i> 5 new members joined today
+                        <i class="fa fa-users text-aqua"></i> 今天新加入5个
                       </a>
                     </li>
                     <!-- end notification -->
                   </ul>
                 </li>
                 <li class="footer" v-if="userInfo.notifications.length > 0">
-                  <a href="javascript:;">View all</a>
+                  <a href="javascript:;">预览所有</a>
                 </li>
               </ul>
             </li>
@@ -81,7 +81,7 @@
                 <span class="label label-danger">{{ userInfo.tasks | count }} </span>
               </a>
               <ul class="dropdown-menu">
-                <li class="header">You have {{ userInfo.tasks | count }} task(s)</li>
+                <li class="header">你有 {{ userInfo.tasks | count }} 任务</li>
                 <li v-if="userInfo.tasks.length > 0">
                   <!-- Inner menu: contains the tasks -->
                   <ul class="menu">
@@ -90,14 +90,14 @@
                       <a href="javascript:;">
                         <!-- Task title and progress text -->
                         <h3>
-                          Design some buttons
+                          设计按钮样式
                           <small class="pull-right">20%</small>
                         </h3>
                         <!-- The progress bar -->
                         <div class="progress xs">
                           <!-- Change the css width attribute to simulate progress -->
                           <div class="progress-bar progress-bar-aqua" style="width: 20%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
-                            <span class="sr-only">20% Complete</span>
+                            <span class="sr-only">完成20%</span>
                           </div>
                         </div>
                       </a>
@@ -106,7 +106,7 @@
                   </ul>
                 </li>
                 <li class="footer" v-if="userInfo.tasks.length > 0">
-                  <a href="javascript:;">View all tasks</a>
+                  <a href="javascript:;">查看所有任务</a>
                 </li>
               </ul>
             </li>
@@ -138,7 +138,7 @@
         <ol class="breadcrumb">
           <li>
             <a href="javascript:;">
-              <i class="fa fa-home"></i>Home</a>
+              <i class="fa fa-home"></i>主页</a>
           </li>
           <li class="active">{{$route.name.toUpperCase()}}</li>
         </ol>

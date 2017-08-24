@@ -1,34 +1,34 @@
 <template>
   <ul class="sidebar-menu">
-    <li class="header">TOOLS</li>
+    <li class="header">工具</li>
     <li class="active pageLink" v-on:click="toggleMenu">
       <router-link to="/"><i class="fa fa-desktop"></i>
-        <span class="page">Dashboard</span>
+        <span class="page">首页</span>
       </router-link>
     </li>
     <li class="pageLink" v-on:click="toggleMenu">
       <router-link to="/tables"><i class="fa fa-table"></i>
-        <span class="page">Tables</span>
+        <span class="page">表格</span>
       </router-link>
     </li>
 
-    <li class="header">ME</li>
+    <li class="header">我的</li>
     <li class="pageLink" v-on:click="toggleMenu">
       <router-link to="/tasks">
         <i class="fa fa-tasks"></i>
-        <span class="page">Tasks</span>
+        <span class="page">任务</span>
       </router-link>
     </li>
     <li class="pageLink" v-on:click="toggleMenu">
       <router-link to="/setting">
         <i class="fa fa-cog"></i>
-        <span class="page">Settings</span>
+        <span class="page">设置</span>
       </router-link>
     </li>
     <li class="treeview">
       <a href="#">
         <i class="fa fa-folder-o"></i>
-        <span>Files</span>
+        <span>文件</span>
         <span class="pull-right-container">
           <i class="fa fa-angle-left fa-fw pull-right"></i>
         </span>
@@ -36,45 +36,45 @@
       <ul class="treeview-menu">
         <li>
           <a href="#">
-            <i class="fa fa-file-word-o"></i> Item 1
+            <i class="fa fa-file-word-o"></i> 项目 1
           </a>
         </li>
         <li>
           <a href="#">
-            <i class="fa fa-file-picture-o"></i> Item 2
+            <i class="fa fa-file-picture-o"></i> 项目 2
           </a>
         </li>
         <li>
           <a href="#">
-            <i class="fa fa-file-pdf-o"></i> Item 3
+            <i class="fa fa-file-pdf-o"></i> 项目 3
           </a>
         </li>
       </ul>
     </li>
 
-    <li class="header">LOGS</li>
+    <li class="header">日志</li>
     <li class="pageLink" v-on:click="toggleMenu">
       <router-link to="/access"><i class="fa fa-book"></i>
-        <span class="page">Access</span>
+        <span class="page">进入</span>
       </router-link>
     </li>
     <li class="pageLink" v-on:click="toggleMenu">
       <router-link to="/server"><i class="fa fa-hdd-o"></i>
-        <span class="page">Server</span>
+        <span class="page">服务</span>
       </router-link>
     </li>
     <li class="pageLink" v-on:click="toggleMenu">
       <router-link to="/repos"><i class="fa fa-heart"></i>
-        <span class="page">Repos</span>
+        <span class="page">什么鬼</span>
         <small class="label pull-right bg-green">AJAX</small>
       </router-link>
     </li>
 
-    <li class="header">PAGES</li>
+    <li class="header">其他</li>
     <li class="pageLink" v-on:click="toggleMenu">
       <router-link to="/login">
         <i class="fa fa-circle-o text-yellow"></i>
-        <span class="page"> Login</span>
+        <span class="page"> 登陆</span>
       </router-link>
     </li>
     <li class="pageLink" v-on:click="toggleMenu">

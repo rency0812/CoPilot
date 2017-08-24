@@ -81,6 +81,7 @@ export default {
   },
   mounted () {
     this.callGitHub()
+    console.log(this)
   }
 }
 </script>

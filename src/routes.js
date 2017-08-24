@@ -3,11 +3,11 @@ import LoginView from './components/Login.vue'
 import NotFoundView from './components/404.vue'
 
 // Import Views - Dash
-import DashboardView from './components/views/Dashboard.vue'
+import DashboardView from './components/myviews/index.vue'
 import TablesView from './components/views/Tables.vue'
 import TasksView from './components/views/Tasks.vue'
 import SettingView from './components/views/Setting.vue'
-import AccessView from './components/views/Access.vue'
+import AccessView from './components/myviews/leaflet.vue'
 import ServerView from './components/views/Server.vue'
 import ReposView from './components/views/Repos.vue'
 
@@ -25,8 +25,8 @@ const routes = [
         path: 'dashboard',
         alias: '',
         component: DashboardView,
-        name: 'Dashboard',
-        meta: {description: 'Overview of environment'}
+        name: '主页',
+        meta: {description: '看看这个环境'}
       }, {
         path: 'tables',
         component: TablesView,
@@ -45,8 +45,8 @@ const routes = [
       }, {
         path: 'access',
         component: AccessView,
-        name: 'Access',
-        meta: {description: 'Example of using maps'}
+        name: 'leaflet',
+        meta: {description: '用于移动设备的交互式地图'}
       }, {
         path: 'server',
         component: ServerView,
