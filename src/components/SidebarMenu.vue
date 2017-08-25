@@ -55,7 +55,7 @@
     <li class="header">日志</li>
     <li class="pageLink" v-on:click="toggleMenu">
       <router-link to="/access"><i class="fa fa-book"></i>
-        <span class="page">进入</span>
+        <span class="page">Leaflet地图</span>
       </router-link>
     </li>
     <li class="pageLink" v-on:click="toggleMenu">

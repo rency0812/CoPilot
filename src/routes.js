@@ -4,7 +4,7 @@ import NotFoundView from './components/404.vue'
 
 // Import Views - Dash
 import DashboardView from './components/myviews/index.vue'
-import TablesView from './components/views/Tables.vue'
+import TablesView from './components/myviews/table.vue'
 import TasksView from './components/views/Tasks.vue'
 import SettingView from './components/views/Setting.vue'
 import AccessView from './components/myviews/leaflet.vue'
@@ -30,8 +30,8 @@ const routes = [
       }, {
         path: 'tables',
         component: TablesView,
-        name: 'Tables',
-        meta: {description: 'Simple and advance table in CoPilot'}
+        name: '表格',
+        meta: {description: '简单的表格'}
       }, {
         path: 'tasks',
         component: TasksView,
@@ -45,7 +45,7 @@ const routes = [
       }, {
         path: 'access',
         component: AccessView,
-        name: 'leaflet',
+        name: 'leaflet地图',
         meta: {description: '用于移动设备的交互式地图'}
       }, {
         path: 'server',
