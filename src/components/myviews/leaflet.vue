@@ -48,6 +48,25 @@ export default {
         .openOn(mymap)
     }
     mymap.on('click', onMapClick)
+    // L.icon
+    var LeafIcon = L.Icon.extend({
+      options: {
+        shadowUrl: 'leaf-shadow.png',
+        iconSize: [38, 95],
+        shadoeSize: [50, 64],
+        iconAnchor: [22, 94],
+        shadowAnchor: [4, 62],
+        popupAnchor: [-3, -76]
+      }
+    })
+
+    var greenIcon = new LeafIcon({iconUrl: 'http://leafletjs.com/examples/custom-icons/leaf-green.png'})
+    var redIcon = new LeafIcon({iconUrl: 'http://leafletjs.com/examples/custom-icons/leaf-red.png'})
+    var orangeIcon = new LeafIcon({iconUrl: 'http://leafletjs.com/examples/custom-icons/leaf-orange.png'})
+
+    L.marker([22.68, 114.00], {icon: greenIcon}).bindPopup('我是绿色的').addTo(mymap)
+    L.marker([22.65, 114.00], {icon: redIcon}).bindPopup('我是红色的').addTo(mymap)
+    L.marker([22.67, 114.02], {icon: orangeIcon}).bindPopup('我是橘色的').addTo(mymap)
   }
 }
 </script>
