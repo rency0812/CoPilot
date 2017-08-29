@@ -16,6 +16,15 @@
         </div>
       </el-col>
     </el-row>
+    <el-row justify="center">
+      <el-col :offset="6" :span="12">
+        <div class="grid-content">
+          <h2>
+            <canvas id="pillar"></canvas>
+          </h2>
+        </div>
+      </el-col>
+    </el-row>
   </div>
 </template>
 
@@ -108,6 +117,42 @@ export default {
         }
       }
       new Chart(Bight, bightConfig) // eslint-disable-line no-new
+
+      // 柱状图
+      var Pillar = document.getElementById('pillar').getContext('2d')
+      var PillarConfig = {
+        type: 'bar',
+        data: {
+          labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+          datasets: [
+            {
+              label: 'gray',
+              backgroundColor: '#4Bc0c0',
+              borderColor: '#4BC0C0',
+              fillColor: '#4BC0C0',
+              strokeColor: '#4BC0C0',
+              data: [65, 59, 90, 81, 56, 55, 40]
+            },
+            {
+              label: 'green',
+              backgroundColor: '#284184',
+              borderColor: '#284184',
+              fillColor: '#284184',
+              strokeColor: '#284184',
+              data: [28, 48, 40, 19, 96, 27, 100]
+            }
+          ]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: !this.isMobile,
+          legend: {
+            position: 'bottom',
+            display: true
+          }
+        }
+      }
+      new Chart(Pillar, PillarConfig) // eslint-disable-line no-new
     })
   }
 }

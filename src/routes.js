@@ -5,7 +5,7 @@ import NotFoundView from './components/404.vue'
 // Import Views - Dash
 import DashboardView from './components/myviews/index.vue'
 import TablesView from './components/myviews/table.vue'
-import TasksView from './components/views/Tasks.vue'
+import TasksView from './components/myviews/tasks.vue'
 import SettingView from './components/views/Setting.vue'
 import AccessView from './components/myviews/leaflet.vue'
 import ServerView from './components/views/Server.vue'
@@ -35,8 +35,8 @@ const routes = [
       }, {
         path: 'tasks',
         component: TasksView,
-        name: 'Tasks',
-        meta: {description: 'Tasks page in the form of a timeline'}
+        name: '任务',
+        meta: {description: '任务列表'}
       }, {
         path: 'setting',
         component: SettingView,
